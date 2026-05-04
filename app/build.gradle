@@ -3,6 +3,15 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-android { namespace 'com.orbitfoundry.game'; compileSdk 35
-    defaultConfig { applicationId 'com.orbitfoundry.game'; minSdk 26; targetSdk 35; versionCode 1; versionName '0.1' }
+android {
+    namespace 'com.orbitfoundry.game'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.orbitfoundry.game'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '0.1'
+    }
 }
