@@ -2,8 +2,6 @@ name: Build Android APK
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main, master ]
 
 jobs:
   build:
@@ -28,7 +26,7 @@ jobs:
           unzip -q gradle.zip
 
       - name: Build debug APK
-        run: ./gradle-8.9/bin/gradle assembleDebug
+        run: ./gradle-8.9/bin/gradle --no-daemon assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
